@@ -36,7 +36,8 @@
 "containers": [
     {
       "class_name": "Sandbox",
-      "image": "moltbot-sandbox", // Remove the ./ and the word Dockerfile
+      // Adding docker.io/ and a :tag tells Cloudflare to pull this from the web
+      "image": "docker.io/openclaw/gateway:latest", 
       "instance_type": "standard-1",
       "max_instances": 1
     }
